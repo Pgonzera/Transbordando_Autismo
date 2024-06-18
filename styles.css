@@ -150,6 +150,10 @@ footer .redes-sociais a {
     margin-bottom: 100px;
     gap: 0;
   }
+  header h1{
+    text-align: center;
+    width: 90%;
+  }
   img{
     margin: auto;
     text-align: center;
