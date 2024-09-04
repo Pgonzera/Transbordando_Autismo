@@ -1,99 +1,110 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-
+<html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Transbordando autismo</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  
+  <!--bootstrap-->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css
+">
+  <link rel="stylesheet" href="styles.css">
+  <title>Transbordando Autismo</title>
 </head>
-
 <body>
-    <!-- Menu Superior -->
-    <h2>Ola porre</h2>
-    <nav>
-        <div id="Logo">
-            <img src="./img/logo.png" alt="Transbordando autismo">
-        </div>
-        <div class="hamburger">
-            <div>
-                <div>
-                    <h3>Menu</h3>
-                </div>
-            </div>
-        </div>
-        <ul class="menu">
-            <li><a href="index.html">Página Inicial</a></li>
-            <li><a href="#">Apoia-se</a></li>
-            <li>
-                <a id="projetos" href="#">Projetos</a>
-                <ul>
-                    <li><a href="projeto1.html">Projeto 1</a></li>
-                    <!-- Adicione mais projetos aqui -->
-                </ul>
-            </li>
-            <li><a href="coluna.html">Coluna de Artigos</a></li>
-                    <!-- Adicione mais projetos aqui -->
-            </li>
-            <li><a href="contato.html">Contato</a></li>
-        </ul>
-    </nav>
+  <!--navbar-->
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Navbar</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown link
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></!li>>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 
-    <!-- Banner -->
-    <header>
-        <h1>Transbordar é transformar</h1>
-        <img src="./img/arvore.png" width="700px">
-        
-    </header>
+<!--slider banner principal-->
+<div id="carouselExampleDark" class="carousel carousel-dark slide">
+  <div class="carousel-indicators">
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+    <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+  </div>
+  <div class="carousel-inner">
+    <div class="carousel-item active" data-bs-interval="10000">
+      <img src="./img/arvore.png" class="d-block w-100" alt="...">
+      <div class="carousel-caption d-md-block">
+        <h5>First slide label</h5>
+        <p>Some representative placeholder content for the first slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item" data-bs-interval="2000">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Second slide label</h5>
+        <p>Some representative placeholder content for the second slide.</p>
+      </div>
+    </div>
+    <div class="carousel-item">
+      <img src="..." class="d-block w-100" alt="...">
+      <div class="carousel-caption d-none d-md-block">
+        <h5>Third slide label</h5>
+        <p>Some representative placeholder content for the third slide.</p>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-    <!-- Sobre o Projeto -->
-    <section id="intro">
-        <h2>Sobre o Projeto</h2>
-        <p>Texto sobre o projeto.</p>
-    </section>
+<!--multi item slider-->
 
-    <!-- Artigos -->
-    <section>
-        <h2>Artigos</h2>
-        <div class="artigos">
-            <div class="artigo">
-                <img src="https://via.placeholder.com/250" alt="Imagem do Artigo 1">
-                <h3>Artigo 1</h3>
-            </div>
-            <!-- Adicione mais artigos aqui -->
 
-            <div class="artigo">
-                <img src="https://via.placeholder.com/250" alt="Imagem do Artigo 1">
-                <h3>Artigo 2 </h3>
-            </div>
 
-            <div class="artigo">
-                <img src="https://via.placeholder.com/250" alt="Imagem do Artigo 1">
-                <h3>Artigo 3</h3>
-            </div>
-        </div>
-    </section>
+<!--Dropown galeria-->
 
-    <!-- Projetos -->
-    <section>
-        <h2>Projetos</h2>
-        <div class="projeto">
-            <img src="https://via.placeholder.com/720x320" alt="Imagem do Projeto 1">
-            <h3>Projeto 1</h3>
-        </div>
-        <!-- Adicione mais projetos aqui -->
-    </section>
 
-    <!-- Footer -->
-    <footer>
-        <div class="redes-sociais">
-            <a href="#"><img src="https://via.placeholder.com/50" alt="Ícone do Facebook"></a>
-            <a href="#"><img src="https://via.placeholder.com/50" alt="Ícone do Twitter"></a>
-            <!-- Adicione mais ícones de redes sociais aqui -->
-        </div>
-        <p>Algumas informações e navegação pelo site.</p>
-    </footer>
 
-    <script src="script.js"></script>
+<!--Brindes-->
+
+
+<!--apoiase-->
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js
+"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+
 </body>
-
 </html>
