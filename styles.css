@@ -1,12 +1,12 @@
 img{
   max-width: 400px;
-  max-height: 360px;
+  max-height: 350px;
   margin: auto;
   margin-bottom: 120px;
 }
 
 .carousel-item{
-  max-height: 500px;
+  max-height: 550px;
   justify-content: center;
   text-align: center;
 }
