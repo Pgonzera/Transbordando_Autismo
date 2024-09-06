@@ -1,9 +1,21 @@
-// script.js
-const hamburger = document.querySelector(".hamburger");
-const navLinks = document.querySelector(".menu");
-hamburger.addEventListener("click", () => {
-  navLinks.style.transform =
-    navLinks.style.transform === "translateX(0%)"
-      ? "translateX(-100%)"
-      : "translateX(0%)";
-});
+let currentSlide = 0;
+
+function moveSlider(direction) {
+  const slider = document.querySelector('.slider');
+  const slides = document.querySelectorAll('.slide');
+  const totalSlides = slides.length;
+  const visibleSlides = window.innerWidth > 1100 ? 3 : (window.innerWidth > 768 ? 2 : 1);
+
+  // Calcular nova posição
+  currentSlide += direction;
+
+  // Limitar os slides
+  if (currentSlide < 0) {
+    currentSlide = totalSlides - visibleSlides;
+  } else if (currentSlide > totalSlides - visibleSlides) {
+    currentSlide = 0;
+  }
+
+  // Mover o slider
+  slider.style.transform = `translateX(-${currentSlide * 350}px)`;
+}
