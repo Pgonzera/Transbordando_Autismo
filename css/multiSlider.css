@@ -10,20 +10,32 @@
 .slider {
   display: flex;
   transition: transform 0.5s ease-in-out;
+  text-align: x ;
 }
 
 .slide {
   min-width: 350px;
+  max-height: 600px;
   padding: 10px;
+  text-align: center;
+  justify-content: center;
 }
 
 .item {
-  background-color: #d87ad29d;
-  color: white;
+  background-color: rgba(167,80,212,0.3);
+  color: black;
   padding: 20px;
-  text-align: center;
-  font-size: 24px;
   border-radius: 10px;
+  margin: auto;
+}
+
+.item h1{
+  text-align: center;
+  
+}
+
+.item p{
+  text-align: start;
 }
 
 .prev, .next {
@@ -61,6 +73,7 @@
 
 @media screen and (max-width: 480px) {
   .slide {
+    justify-content: center;
     min-width: 100%;
   }
 }
