@@ -4,7 +4,7 @@ function moveSlider(direction) {
   const slider = document.querySelector('.slider');
   const slides = document.querySelectorAll('.slide');
   const totalSlides = slides.length;
-  const visibleSlides = window.innerWidth > 1100 ? 3 : (window.innerWidth > 768 ? 2 : 1);
+  const visibleSlides = window.innerWidth > 1100 ? 3 : (window.innerWidth > 768 ? 1 : 1);
 
   // Calcular nova posição
   currentSlide += direction;
@@ -17,5 +17,5 @@ function moveSlider(direction) {
   }
 
   // Mover o slider
-  slider.style.transform = `translateX(-${currentSlide * 350}px)`;
+  slider.style.transform = `translateX(-${currentSlide * 345}px)`;
 }
